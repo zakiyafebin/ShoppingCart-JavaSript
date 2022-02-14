@@ -147,9 +147,9 @@ function renderCart() {
             </div>
             <div class="units">
               <div class="box">
-                <div class="plus" onclick="minusItem(${item.id})">-</div>
+                <div class="minus" onclick="minusItem(${item.id})">-</div>
                 <div class="number">${item.numberOfUnits}</div>
-                <div class="minus" onclick="plusItem(${item.id})">+</div>
+                <div class="plus" onclick="plusItem(${item.id})">+</div>
               </div>
                 
               <div class="remove" onclick="remove(${item.id})">
@@ -206,5 +206,7 @@ function minusItem(id) {
   }else if(item.numberOfUnits===1){
     remove(id);
   }
+  if(cart.length ==0)
+  displayCart()
   updateCart();
 }

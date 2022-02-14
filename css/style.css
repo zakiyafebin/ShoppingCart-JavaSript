@@ -44,6 +44,7 @@ nav a{
   
 }
 img {max-width:100%;}
+
  .item{
   flex-basis: 30%;
   max-width: 30%; 
@@ -109,6 +110,11 @@ img {max-width:100%;}
 }
 .plus,.number,.minus{
   padding: 6px;
+}
+.minus, .plus{
+  
+  cursor: pointer;
+  
 }
  .remove{
   padding:  10px;
